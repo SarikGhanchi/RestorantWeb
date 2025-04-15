@@ -1,0 +1,7 @@
+{
+    "dishes": [
+        {"name": "Pasta", "price": "$12", "image": "pasta.jpg"},
+        {"name": "Pizza", "price": "$15", "image": "pizza.jpg"},
+        {"name": "Burger", "price": "$10", "image": "burger.jpg"}
+    ]
+}

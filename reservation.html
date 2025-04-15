@@ -1,0 +1,35 @@
+<!-- reservation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Table Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body class="reservation-page">
+    <div class="container mt-5">
+        <div class="reservation-box">
+            <h2 class="text-center">Reserve Your Table</h2>
+
+            <form id="reservation-form" class="reservation-form">
+                <div class="input-group mb-3">
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    <span id="char-count" class="char-counter">0/30</span>
+                </div>
+                <input type="email" id="email" class="form-control mb-3" placeholder="Your Email" required>
+                <input type="datetime-local" id="date" class="form-control mb-3" required>
+                <button type="submit" class="btn btn-gold w-100">Reserve Now</button>
+            </form>
+
+            <div id="confirmation-message" class="alert alert-success mt-3" style="display: none;">
+                Reservation confirmed! We’ll contact you soon.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="reservation.js"></script>
+</body>
+</html>
